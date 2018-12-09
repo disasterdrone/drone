@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <style>
+        .container {
+            text-align: center;
+        }
+        #mapContainer {
+            position: relative;
+            margin-left: 130px;
+            margin-right: 0;
+            height: 450px;
+            width: 650px;
+            border: 2px solid #000;
+            text-align: center;
+        }
+        #disasterName {
+            background-color: #CE1D1D;
+            color: #F2AB1C;
+            border-radius: 5px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+        .title {
+            background-color: #3356AF;
+            color: #FFFFFF;
+            border-radius: 5px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            width: 800px;
+            margin-bottom: 30px;
+            margin-left: 50px;
+            position: relative;
+            text-align: center;
+        }
+        img {
+            height: 250px;
+            width: 300px;
+        }
+        #pictures {
+            margin-top: 50px;
+        }
+    </style>
+    <title>Title</title>
+</head>
+<body>
+    <div class="container">
+
+        <div>
+            <h1 id="disasterName">Hurricane Irma</h1>
+            <h3 class="title">Your requested search location:</h3>
+        </div>
+        <div id="mapContainer">
+        </div>
+
+        <div>
+            <h1 class="title">Current state of property:</h1>
+        </div>
+
+        <div class="container" id="pictures">
+            <div class="row">
+                <div class="col l6">
+                    <a href="img/drone-1.jpg" target="_blank"><img src="img/drone-1.jpg" alt=""></a>
+
+                </div>
+                <div class="col l6">
+                    <a href="img/drone-2.jpg" target="_blank"><img src="img/drone-2.jpg" alt=""></a>
+                </div>
+
+            </div>
+            <div class="row">
+                <div class="col l6">
+                    <a href="img/drone-3.jpg" target="_blank"><img src="img/drone-3.jpg" alt=""></a>
+                </div>
+                <div class="col l6">
+                    <a href="img/drone-4.jpg" target="_blank"><img src="img/drone-4.jpg" alt=""></a>
+                </div>
+
+            </div>
+            <div class="row">
+                <div class="col l6">
+                    <a href="img/drone-5.jpg" target="_blank"><img src="img/drone-5.jpg" alt=""></a>
+                </div>
+                <div class="col l6">
+                    <a href="img/drone-6.jpg" target="_blank"><img src="img/drone-6.jpg" alt=""></a>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+<script src = "jquery-3.3.1.js"></script>
+<script type="text/javascript" src="js/materialize.min.js"></script>
+<script src="https://unpkg.com/leaflet@1.3.4/dist/leaflet.js"></script>
+    <script>
+        "use strict";
+        var map = L.map('mapContainer').setView([25.724460, -80.252400], 13);
+
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+        }).addTo(map);
+
+        L.marker([25.724460, -80.252400]).addTo(map)
+            .bindPopup('YOUR DRONE SEARCH:<br>3698 Franklin Avenue, Miami, FL 33133')
+            .openPopup();
+
+        // ----------
+
+        // var DroneIcon = L.Icon.extend({
+        //     options: {
+        //         iconSize:     [38, 95],
+        //         iconAnchor:   [22, 94],
+        //         popupAnchor:  [-3, -76]
+        //     }
+        // });
+        //
+        //
+        // var Icon = new DroneIcon({iconUrl: './img/Aeroplane.pgn'});
+        //
+        // // L.marker([25.724460, -80.252400], {icon: LeafIcon}).addTo(map);
+        // L.marker([25.724460, -80.252400], {icon: Icon}).addTo(map).bindPopup('YOUR DRONE SEARCH:<br>3698 Franklin Avenue, Miami, FL 33133').openPopup();
+
+
+    </script>
+</body>
+</html>
