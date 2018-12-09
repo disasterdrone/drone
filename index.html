@@ -48,33 +48,32 @@
     <!--</nav>-->
 
     <ul id="slide-out" class="sidenav">
-        <li><div class="user-view">
-            <div class="background">
-                <img id="smallLogo" src="img/logo-DroneHomeblack.png">
-            </div>
-        </div></li>
+        <li><a href="index.html">Home</a></li>
         <li><a href="user_results.html">Sign In</a></li>
         <li><a href="signup.html">Register</a></li>
         <li><div class="divider"></div></li>
         <li><a href="#!">Rates</a></li>
         <li><a href="#!">Search</a></li>
-        <li><a href="#!">About</a></li>
+        <li><a href="service_area.html">Service Area</a></li>
         <li><a href="#!">Preparation</a></li>
         <li><a href="#!">Contact</a></li>
     </ul>
-    <a href="#" data-target="slide-out" class="sidenav-trigger top-right"><i class="material-icons">menu</i></a>
+    <a href="#" data-target="slide-out" class="sidenav-trigger top-left"><i class="material-icons">menu</i></a>
 
     <div class="container">
 
         <div class="row">
-            <form class="col s12 l10 offset-l1">
+            <form class="col s12 l12">
                 <div class="center-align">
 
                         <div class="row">
-                            <div class="col s6">
-                                <h3>Find your home</h3>
+                            <div class="col s4">
+                                <img id="largeLogo" src="img/logo-DroneHomeblack.png" alt="">
                             </div>
-                            <div id="mainSearch" class="input-field col s6">
+                            <div id='findHome'class="col s4">
+                                <h4>Find your home</h4>
+                            </div>
+                            <div id="mainSearch" class="input-field col s4">
                                 <i class="material-icons prefix">location_on</i>
                                 <input id="icon_prefix" type="text" class="validate">
                                 <label for="icon_prefix">Property Address Search</label>
@@ -92,19 +91,21 @@
         </div>
         <h4 class="center-align">What we can do for you and your family</h4>
         <div class="col s12 m7">
-            <div class="card horizontal hoverable">
-
-                <div class="card-stacked">
+            <div class="row s12">
+                <div class="row col l6 card-stacked">
                     <div class="card-content">
                         <p>Some things you just have to prepare for ahead of time. You can either pay for a one time fly,
                             or an opt in to a subscription based membership. Learn more about our two types of memberships
                             and see which one is right for your family</p>
                     </div>
-                    <div class="card-action">
-                        <a href="#">Learn more</a>
+                    <div class="row">
+                        <div class="card-action">
+                            <a href="#">Learn more</a>
+                        </div>
                     </div>
+
                 </div>
-                <div class="card-image">
+                <div class="col l5 card-image">
                     <img src="img/happy_fam.jpg">
                 </div>
             </div>
@@ -198,7 +199,6 @@
     <script>
         $(document).ready(function(){
             $('.sidenav').sidenav();
-            $('.carousel').carousel();
         });
 
     </script>
