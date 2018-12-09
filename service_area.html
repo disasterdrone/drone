@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <style>
+        .container {
+            text-align: center;
+        }
+        #mapContainer {
+            position: relative;
+            margin-left: 130px;
+            margin-right: 0;
+            /*height: 450px;*/
+            /*width: 650px;*/
+            height: 600px;
+            width: 800px;
+            border: 2px solid #000;
+            text-align: center;
+        }
+        #disasterName {
+            background-color: #CE1D1D;
+            color: #F2AB1C;
+            border-radius: 5px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+        .title {
+            background-color: #3356AF;
+            color: #FFFFFF;
+            border-radius: 5px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            width: 800px;
+            margin-bottom: 30px;
+            margin-left: 50px;
+            position: relative;
+            text-align: center;
+        }
+        img {
+            height: 250px;
+            width: 300px;
+        }
+        #pictures {
+            margin-top: 50px;
+        }
+    </style>
+    <title>Title</title>
+</head>
+<body>
+    <div class="container">
+
+        <div>
+            <h1 id="disasterName">Service Area</h1>
+            <h3 class="title">Our service is currently available in:</h3>
+        </div>
+        <div id="mapContainer">
+        </div>
+
+<!--         <div>
+            <h1 class="title">Current state of property:</h1>
+        </div>
+ -->
+
+    </div>
+
+<script src = "jquery-3.3.1.js"></script>
+<script type="text/javascript" src="js/materialize.min.js"></script>
+<script src="https://unpkg.com/leaflet@1.3.4/dist/leaflet.js"></script>
+    <script>
+        "use strict";
+        // var map = L.map('mapContainer').setView([25.724460, -80.252400], 4);
+        var map = L.map('mapContainer').setView([39, -95], 4);
+
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+        }).addTo(map);
+
+        // L.marker([25.724460, -80.252400]).addTo(map)
+        //     .bindPopup('YOUR DRONE SEARCH:<br>3698 Franklin Avenue, Miami, FL 33133')
+        //     .openPopup();
+
+        var circle1 = L.circle([25.724460, -80.252400], {
+            color: 'red',
+            fillColor: '#f03',
+            fillOpacity: 0.5,
+            radius: 50000
+        }).addTo(map);
+
+        var circle2 = L.circle([29.760427, -95.369803], {
+            color: 'red',
+            fillColor: '#f03',
+            fillOpacity: 0.5,
+            radius: 50000
+        }).addTo(map);
+
+        var circle3 = L.circle([34.052234, -118.243685], {
+            color: 'red',
+            fillColor: '#f03',
+            fillOpacity: 0.5,
+            radius: 50000
+        }).addTo(map);
+
+        var circle4 = L.circle([36.8529263, -75.977985], {
+            color: 'red',
+            fillColor: '#f03',
+            fillOpacity: 0.5,
+            radius: 50000
+        }).addTo(map);
+
+        var circle5 = L.circle([29.9510658, -90.0715323], {
+            color: 'red',
+            fillColor: '#f03',
+            fillOpacity: 0.5,
+            radius: 50000
+        }).addTo(map);
+
+
+
+    </script>
+</body>
+</html>
