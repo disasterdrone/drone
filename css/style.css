@@ -5,5 +5,15 @@
 }
 .carousel-display {
     width: 80vh;
-    tansform: 0 50vh;
+    /*transform: translate(50%);*/
+    /*float: 50vh;*/
+    martin: 10px auto 20px;
+    display: block
+}
+.jumbotron-display {
+    object-fit: cover;
+}
+.signing_in {
+    margin: 5vh;
+    padding: 3vh 0 1vh 0;
 }
