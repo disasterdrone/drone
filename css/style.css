@@ -27,11 +27,21 @@ body {
     /*height: 50px;*/
     width: 250px;
     padding-top: 25px;
-    margin-bottom: 25px;
+    margin-bottom: 35px;
 }
-#mainSearch {
-    margin-top: 25px;
+#mainSearch{
+    margin-top: 15vh;
 }
 #mainRow {
     margin-top: 50px;
+}
+#largeLogo {
+    width: 40vh;
+    margin-top: 5vh;
+}
+#findHome{
+    margin-top: 12vh;
+}
+h1, h2, h3, h4 {
+    color: #3356AF;
 }
