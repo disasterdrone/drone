@@ -28,5 +28,10 @@ body {
     width: 250px;
     padding-top: 25px;
     margin-bottom: 25px;
-
+}
+#mainSearch {
+    margin-top: 25px;
+}
+#mainRow {
+    margin-top: 50px;
 }
