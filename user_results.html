@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <style>
+        #mapContainer {
+            position: absolute;
+            margin: 0;
+            height: 450px;
+            width: 650px;
+            border: 2px solid #000;
+
+        }
+    </style>
+    <title>Title</title>
+</head>
+<body>
+    <div>
+        <h1>Your requested search location:</h1>
+    </div>
+    <div id="mapContainer">
+
+    </div>
+
+<script src = "jquery-3.3.1.js"></script>
+<script type="text/javascript" src="js/materialize.min.js"></script>
+<script src="https://unpkg.com/leaflet@1.3.4/dist/leaflet.js"></script>
+    <script>
+        "use strict";
+        var map = L.map('mapContainer').setView([51.505, -0.09], 13);
+
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+        }).addTo(map);
+
+        L.marker([51.5, -0.09]).addTo(map)
+            .bindPopup('Your home:<br> ')
+            .openPopup();
+
+    </script>
+</body>
+</html>
