@@ -13,3 +13,7 @@
 .jumbotron-display {
     object-fit: cover;
 }
+.signing_in {
+    margin: 5vh;
+    padding: 3vh 0 1vh 0;
+}

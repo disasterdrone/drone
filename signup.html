@@ -1,0 +1,294 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+    <link rel="stylesheet" href="css/style.css">
+    <title>Hello, world!</title>
+</head>
+<body>
+
+    <ul id="slide-out" class="sidenav">
+        <li><div class="user-view">
+            <div class="background">
+                <img src="images/office.jpg">
+            </div>
+            <a href="#user"><img class="circle" src="images/yuna.jpg"></a>
+            <a href="#name"><span class="white-text name">John Doe</span></a>
+            <a href="#email"><span class="white-text email">jdandturk@gmail.com</span></a>
+        </div></li>
+        <li><a href="#!">Sign In</a></li>
+        <li><div class="divider"></div></li>
+        <li><a href="#!">Rates</a></li>
+        <li><a href="#!">Search</a></li>
+        <li><a href="#!">About</a></li>
+        <li><a href="#!">Preparation</a></li>
+        <li><a href="#!">Contact</a></li>
+    </ul>
+    <a href="#" data-target="slide-out" class="sidenav-trigger top-right"><i class="material-icons">menu</i></a>
+
+    <div class="container">
+
+        <h3 class="center-align">The information you need. Now.</h3>
+        <div class="card #eceff1 blue-grey lighten-5">
+            <div class="signing_in">
+                <div class="row">
+                    <form class="col s12">
+                        <div class="row">
+                            <div class="input-field col s6">
+                                <input id="first_name" type="text" class="validate">
+                                <label for="first_name">First Name</label>
+                            </div>
+                            <div class="input-field col s6">
+                                <input id="last_name" type="text" class="validate">
+                                <label for="last_name">Last Name</label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="input-field col s12">
+                                <input id="address" type="text" class="validate">
+                                <label for="address">Address</label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="input-field col s12">
+                                <input id="city" type="text" class="validate">
+                                <label for="city">City</label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="input-field col s6">
+                                <input id="state" type="text" class="validate">
+                                <label for="state">State</label>
+                            </div>
+                            <div class="input-field col s6">
+                                <input id="zip_code" type="text" class="validate">
+                                <label for="zip_code">Zip Code</label>
+                            </div>
+                        </div>
+                        <h5 class="center-align">Please fill out the following information</h5>
+                        <div class="row">
+                            <div class="input-field col s12">
+                                <input id="phone" type="text" class="validate">
+                                <label for="phone">Phone</label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="input-field col s12">
+                                <input id="email" type="email" class="validate">
+                                <label for="email">Email</label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="input-field col s12">
+                                <input id="password" type="password" class="validate">
+                                <label for="password">Password</label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="input-field col s12">
+                                <input id="repassword" type="password" class="validate">
+                                <label for="repassword">Re-enter Password</label>
+                            </div>
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col l5">
+                <p>Price per house in your area is $500. This includes a downloadable flyover video of the property, and still images of property</p>
+            </div>
+            <div class="col l7">
+                <form class="col s12">
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <input id="card_number" type="text" class="validate">
+                            <label for="card_number">Card Number</label>
+                        </div>
+                    </div>
+                    <div class="input-field col l6">
+                        <select>
+                            <option value="" disabled selected>Month</option>
+                            <option value="1">January</option>
+                            <option value="2">February</option>
+                            <option value="3">March</option>
+                            <option value="4">April</option>
+                            <option value="5">May</option>
+                            <option value="6">June</option>
+                            <option value="7">July</option>
+                            <option value="8">August</option>
+                            <option value="9">September</option>
+                            <option value="10">October</option>
+                            <option value="11">November</option>
+                            <option value="12">December</option>
+                        </select>
+                        <label>Materialize Select</label>
+                    </div>
+                    <div class="input-field col l6">
+                        <select>
+                            <option value="" disabled selected>Month</option>
+                            <option value="1">2018</option>
+                            <option value="2">2019</option>
+                            <option value="3">2020</option>
+                            <option value="4">2021</option>
+                            <option value="5">2022</option>
+                            <option value="6">2023</option>
+                            <option value="7">2024</option>
+                            <option value="8">2025</option>
+                            <option value="9">2026</option>
+                            <option value="10">2027</option>
+                            <option value="11">2028</option>
+                            <option value="12">2029</option>
+                        </select>
+                        <label>Materialize Select</label>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s6">
+                            <input id="card_security_code" type="text" class="validate">
+                            <label for="card_security_code">Security Code/CCV</label>
+                        </div>
+                        <div class="input-field col s6">
+                            <input id="card_zip_code" type="text" class="validate">
+                            <label for="card_zip_code">Zip Code</label>
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+        </div>
+        <!--<div class="row">-->
+            <!--<form class="col s12 l6 offset-l3">-->
+                <!--<div class="center-align">-->
+                    <!--<div class="input-field col s12">-->
+                        <!--<i class="material-icons prefix">location_on</i>-->
+                        <!--<input id="icon_prefix" type="text" class="validate">-->
+                        <!--<label for="icon_prefix">Property Address Search</label>-->
+                    <!--</div>-->
+                <!--</div>-->
+            <!--</form>-->
+        <!--</div>-->
+
+        <!--<div class="card">-->
+            <!--<div class="card-image waves-effect waves-block waves-light">-->
+                <!--<img class="activator" src="img/slide_caliMudslide-wide.jpg">-->
+            <!--</div>-->
+        <!--</div>-->
+        <!--<h4 class="center-align">What we can do for you and your family</h4>-->
+        <!--<div class="col s12 m7">-->
+            <!--<div class="card horizontal hoverable">-->
+
+                <!--<div class="card-stacked">-->
+                    <!--<div class="card-content">-->
+                        <!--<p>Some things you just have to prepare for ahead of time. You can either pay for a one time fly,-->
+                            <!--or an opt in to a subscription based membership. Learn more about our two types of memberships-->
+                            <!--and see which one is right for your family</p>-->
+                    <!--</div>-->
+                    <!--<div class="card-action">-->
+                        <!--<a href="#">Learn more</a>-->
+                    <!--</div>-->
+                <!--</div>-->
+                <!--<div class="card-image">-->
+                    <!--<img src="img/happy_fam.jpg">-->
+                <!--</div>-->
+            <!--</div>-->
+        <!--</div>-->
+
+        <!--<div class="card row">-->
+                <!--<div class="card-image waves-effect waves-block waves-light">-->
+                    <!--<img class="activator" src="img/rebuilding.jpg">-->
+                <!--</div>-->
+        <!--</div>-->
+
+        <!--<div class="col s12 m7">-->
+            <!--<div class="card horizontal hoverable">-->
+                <!--<div class="card-image">-->
+                    <!--<img src="img/thumb_liferaft.jpeg">-->
+                <!--</div>-->
+                <!--<div class="card-stacked">-->
+                    <!--<div class="card-content">-->
+                        <!--<p>Some things you just have to prepare for ahead of time. You can either pay for a one time fly,-->
+                            <!--or an opt in to a subscription based membership. Learn more about our two types of memberships-->
+                            <!--and see which one is right for your family</p>-->
+                    <!--</div>-->
+                    <!--<div class="card-action right-align">-->
+                        <!--<a href="#">About our rates</a>-->
+                    <!--</div>-->
+                <!--</div>-->
+
+            <!--</div>-->
+        <!--</div>-->
+
+        <!--<div>-->
+            <!--<h3 class="center-align">Our Recommendations</h3>-->
+            <!--<p class="center-align">Did you know that 82% of people are not properly prepared for a major emergency? Stay ahead of the curve-->
+                <!--by using our list and preparing yourself so your can have the peace of mind when disaster strikes. Find-->
+                <!--recommendations for businesses in your area!</p>-->
+            <!--<div class="row">-->
+                <!--<a class="waves-effect waves-light btn col l4 offset-l4">Learn from our experts</a>-->
+            <!--</div>-->
+        <!--</div>-->
+        <!--<div>-->
+            <!--<h2>Contact Us</h2>-->
+            <!--<p>Still have questions? Please email us with all questions and concerns</p>-->
+            <!--<div class="row">-->
+            <!--<form class="col s12">-->
+                <!--<div class="row">-->
+                    <!--<div class="input-field col s6">-->
+                        <!--<input id="first_name" type="text" class="validate">-->
+                        <!--<label for="first_name">First Name</label>-->
+                    <!--</div>-->
+                    <!--<div class="input-field col s6">-->
+                        <!--<input id="last_name" type="text" class="validate">-->
+                        <!--<label for="last_name">Last Name</label>-->
+                    <!--</div>-->
+                <!--</div>-->
+                <!--<div class="row">-->
+                    <!--<div class="input-field col s12">-->
+                        <!--<input id="email" type="email" class="validate">-->
+                        <!--<label for="email">Email</label>-->
+                    <!--</div>-->
+                <!--</div>-->
+            <!--</form>-->
+        <!--</div>-->
+        <!--</div>-->
+
+
+    </div>
+
+    <!--CAROUSEL-->
+    <!--<div class="center-align">-->
+        <!--<div class = "carousel-display">-->
+            <!--<div class="carousel carousel-slider">-->
+                <!--<a class="carousel-item" href="#one!"><img src="img/goat1.jpeg"></a>-->
+                <!--<a class="carousel-item" href="#two!"><img src="img/goat2.jpg"></a>-->
+                <!--<a class="carousel-item" href="#three!"><img src="img/goat1.jpeg"></a>-->
+                <!--<a class="carousel-item" href="#three!"><img src="img/goat2.jpg"></a>-->
+            <!--</div>-->
+        <!--</div>-->
+    <!--</div>-->
+
+
+
+
+
+    <!--HOME-->
+    <!--Sign in-->
+    <!--rates/subscript-->
+
+<script src = "jquery-3.3.1.js"></script>
+<script type="text/javascript" src="js/materialize.min.js"></script>
+
+    <script>
+        $(document).ready(function(){
+            $('select').formSelect();
+        });
+
+    </script>
+
+<script src="main.js"></script>
+</body>
+</html>
